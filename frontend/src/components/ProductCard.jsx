@@ -26,6 +26,7 @@ export default function ProductCard({ product }) {
         className="product-title text-uppercase mb-2">
         {product.name}
       </h3>
+      <div className='d-flex align-items-baseline flex-row gap-2 fs-5 text-dark'><span className='text-decoration-line-through fs-6'>{product.originalPrice}</span> <span className='fw-bold'>{product.price}</span></div>
     </Link>
   );
 }
